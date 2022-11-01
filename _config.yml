@@ -63,7 +63,7 @@ callouts:
     color: red
 
 # Build settings
-theme: just-the-docs/just-the-docs
+theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
