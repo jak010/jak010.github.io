@@ -62,7 +62,7 @@ callouts:
     title: Warning
     color: red
 
-theme: just-the-docs
+# theme: just-the-docs
 
 # Build settings
 remote_theme: just-the-docs/just-the-docs
