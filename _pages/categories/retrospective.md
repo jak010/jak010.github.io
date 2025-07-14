@@ -1,9 +1,9 @@
 ---
-title: Side Project
+title: Retrospective
 layout: category
-permalink: /categories/side-projects/
+permalink: /categories/retrospective/
 author_profile: true
-taxonomy: Categories1
+taxonomy: Retrospective
 sidebar:
   nav: categories
 toc: true

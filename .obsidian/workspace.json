@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "이 곳에 제목을",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,15 +169,21 @@
       "markdown-importer:마크다운 형식 불러오기 열기": false
     }
   },
-  "active": "d825e1f82bfd63ab",
+  "active": "bd6cbedc102e5fe6",
   "lastOpenFiles": [
+    "_pages/categories/retrospective.md",
     "_pages/categories/side-project.md",
+    "_pages/categories-archive.md",
+    "_posts/2025-07-14, 6월 회고.md",
+    "_pages/about.md",
     "_posts/2025-07-14-categories-post-test.md",
+    "_posts/무제.md",
+    "_posts/무제 1.md",
+    "_pages/categories/무제.md",
+    "README.md",
     "_posts/2022-07-24-categories-post-name-here-2.md",
     "_posts/2022-07-24-categories-post-name-here-4.md",
     "_posts/2022-07-24-categories-post-name-here-3.md",
-    "_pages/categories-archive.md",
-    "_pages/about.md",
     "_pages/categories/category-categories2.md",
     "_pages/categories/category-categories3.md",
     "_pages/categories/category-categories4.md",
@@ -188,7 +194,6 @@
     "assets/images/meee.png",
     "Gemfile",
     "index.html",
-    "README.md",
     "무제.canvas",
     "2025-07-14.md",
     "screenshot-layouts.png"
