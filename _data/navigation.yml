@@ -10,7 +10,9 @@ main:
 # 2022.02.15 sidebar update : simple ver.
 
 categories:
-  - title: "월간 회고"
+  - title: "일상 생각"
     url: /categories/retrospective/
   - title: "Side Project"
     url: /categories/side-projects/
+  - title: "Book"
+    url: /categories/book/
