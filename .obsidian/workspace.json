@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/book/2025-07-17 \"내 코드가 그렇게 이상한가요\" 정리.md",
+                "file": "_pages/categories/book.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-17 \"내 코드가 그렇게 이상한가요\" 정리"
+              "title": "book"
             }
           }
         ]
@@ -171,11 +171,11 @@
   },
   "active": "c7e09f250cb97c9f",
   "lastOpenFiles": [
-    "_pages/categories/retrospective.md",
-    "_pages/categories/book.md",
     "_pages/categories/side-project.md",
+    "_pages/categories/book.md",
     "_posts/book/2025-07-17 \"내 코드가 그렇게 이상한가요\" 정리.md",
     "_posts/side-project/2025-07-14-exception 설계에 대한 노트 1.md",
+    "_pages/categories/retrospective.md",
     "_posts/_template/_example.md",
     "_posts/side-project",
     "_posts/_template",
