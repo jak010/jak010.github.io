@@ -35,5 +35,6 @@ _site
 ### Obsidian ###
 # config dir
 .obsidian/
+.obsidian/*
 
 # End of https://www.toptal.com/developers/gitignore/api/obsidian
