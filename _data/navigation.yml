@@ -9,10 +9,7 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 
-categories:
-  - title: "일상 생각"
-    url: /categories/retrospective/
-  - title: "Side Project"
-    url: /categories/side-projects/
-  - title: "Books"
-    url: /categories/books/
+categories:  
+  - title: "읽은 책"
+    url: /categories/book/
+    
