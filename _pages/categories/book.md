@@ -1,7 +1,7 @@
 ---
 title: 읽은 책
 layout: category
-permalink: /categories/book/
+permalink: /categories/books/
 author_profile: true
 taxonomy: Categories1
 sidebar:
@@ -9,4 +9,5 @@ sidebar:
 toc: true
 ---
 
-[내 코드가 그렇게 이상한가요](/categories/book/is_my_code_really_that_weird)
+
+[내 코드가 그렇게 이상한가요2](/categories/book/is_my_code_really_that_weird)
