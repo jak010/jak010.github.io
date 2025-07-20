@@ -10,4 +10,4 @@ toc: true
 ---
 
 
-[내 코드가 그렇게 이상한가요2](/categories/book/is_my_code_really_that_weird)
+[내 코드가 그렇게 이상한가요](/categories/book/is_my_code_really_that_weird)
