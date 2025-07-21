@@ -14,3 +14,5 @@ categories:
     url: /categories/books/
   - title: "프로그래밍"
     url: /categories/language/
+  - title: "개발 도구"
+    url: /categories/dev-tools/
