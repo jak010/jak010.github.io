@@ -12,4 +12,5 @@ main:
 categories:  
   - title: "읽은 책"
     url: /categories/books/
-    
+  - title: "프로그래밍"
+    url: /categories/language/
