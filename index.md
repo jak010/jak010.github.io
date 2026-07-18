@@ -2,100 +2,28 @@
 title: Home
 layout: home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "서비스 운영 과정에서 발생하는 성능, 안정성, 보안 문제를 분석하고 개선하는 백엔드 개발자의 포트폴리오입니다."
 permalink: /
 ---
+# PortPolio
 
-# Focus on writing good documentation
-{: .fs-9 }
+4년 4개월간 다양한 비즈니스 환경에서 Python(FastAPI, Django)과 Java(Spring Boot) 기반 백엔드 시스템을 개발하고 운영해 온 백엔드 엔지니어입니다.
+단순히 주어지는 기능을 구현하는 데 그치지 않고, 시스템의 내부 동작 원리와 인프라 자원의 효율성을 파악하여 실질적인 비즈니스 성능과 안전성을 향상하는 데 집중해 왔습니다.
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+그동안 다음과 같은 핵심 성과를 중심으로 비즈니스에 기여해 왔습니다.
+*   **금융 및 외부 API 연동 안정화**: 가상계좌 결제/정산 프로세스의 Dozn API 규격을 분석하여 단절된 테스트망을 복구하고 네트워크 접근 정책(Akamai, Fortinet)을 조율했으며, P2P 투자 플랫폼 구축을 주도하여 **누적 매출액 20억 원** 달성에 기여했습니다.
+*   **대용량 데이터 수집 및 인프라 효율성 극대화**: **추가 인프라 비용 증설 없이** Daphne(ASGI) 인스턴스를 **1개에서 4개로 다중화**하여 WebSocket 실시간 유실률 **0%**를 달성했습니다. 또한 Selenium 방식의 수집 병목을 API 호출 구조로 전환하여 데이터 수집 소요 시간을 **3~5분에서 30~45초로 약 80~85% 단축**했으며, 환율 수집 프로세스 성능도 **90초에서 10~15초로 약 85% 단축**시켰습니다.
+*   **웹 어플리케이션 보안 결함 진단 및 보완**: 데이터 조회 로직의 SQL Injection 취약성을 **5초 지연(PoC)** 방식으로 검증하여 파라미터 바인딩을 적용했으며, PDF 생성 시 **25,000자 글자수 제한** 및 입력값 이스케이프 정책을 도입하여 웹 서버 자원 고갈 및 SSTI 유출 위협을 차단했습니다.
+*   **테스트 환경 표준화 및 개발 생산성 개선**: 수동 검증 위주의 조직에 최초로 `pytest` 프레임워크와 Mocking 가이드를 수립하여 테스트 커버리지를 **52%에서 71%로 약 19%p 상향**하였으며, 테스트 결과의 한글 docstring이 콘솔에 직접 출력되도록 Custom Test Runner를 개발하여 디버깅 가시성을 개선했습니다.
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
+## 🛠️ Skill Inventory (기술 스택)
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
-
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *[customize]* the theme to make them look completely different!
-
-Browse the docs to learn more about how to use this theme.
-
-## Getting started
-
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
-
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
-
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
-
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
-
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with the template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-{: .note }
-See the theme [README][Just the Docs README] for how to use the theme as a gem without creating a new site.
-
-## About the project
-
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](https://patrickmarsceill.com) and the [Just the Docs contributors](https://github.com/just-the-docs/just-the-docs/graphs/contributors).
-
-Just the Docs is currently primarily maintained by [Matt Wang](https://mattx.wang).
-
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
-
-### Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
-
-#### Thank you to the contributors of Just the Docs!
-
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"></a>
-  </li>
-{% endfor %}
-</ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
-
-----
-
-[^1]: The [source file for this page] uses all three markup languages.
-
-[^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[customize]: {% link docs/customization.md %}
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+| 분류 | 기술 스택 |
+| :--- | :--- |
+| **Language** | Python, Java |
+| **Framework & Library** | Django, Django REST Framework (DRF), FastAPI, Spring Boot, Pytest, Daphne, Django Channels, JPA, MyBatis |
+| **Database** | MySQL, MariaDB, Redis |
+| **DevOps & Infra** | AWS (EC2, ECS, Lambda, EventBridge, Route53, S3, RDS, ELB, App Runner, Secrets Manager, ECR, API Gateway, CodeCommit, Parameter Store, CloudWatch), Docker, Nginx, Akamai, Fortinet, Juniper |

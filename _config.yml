@@ -53,6 +53,9 @@ exclude:
   - CODE_OF_CONDUCT.md
   - docker-compose.yml
   - Dockerfile
+  - MIGRATION.md
+  - CHANGELOG.md
+  - PORTFOLIO_GUIDE.md
   # theme test code
   - fixtures/
   - spec/
