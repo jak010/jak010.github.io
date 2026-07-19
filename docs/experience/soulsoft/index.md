@@ -1,16 +1,12 @@
 ---
 layout: default
-title: 4. 소울소프트 프로젝트
-parent: Projects
+title: 4. 소울소프트
+parent: Experience
 nav_order: 4
 ---
 
 # 소울소프트 주요 업무
 {: .no_toc }
-
-> **역할** : 보안 취약점 진단 및 헬스케어 서비스 데이터 수집 스크립트 개발  
-> **재직 기간** : 2020.09 ~ 2020.12 (4개월)  
-
 
 ## 목차
 {: .no_toc .text-delta }

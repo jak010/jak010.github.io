@@ -1,15 +1,12 @@
 ---
 layout: default
 title: 2. 엠포스 프로젝트
-parent: Projects
+parent: Experience
 nav_order: 2
 ---
 
 # 엠포스 프로젝트 이력
 {: .no_toc }
-
-> **역할**: 사내 광고 플랫폼 백엔드 개발 및 시스템 유지보수  
-> **재직 기간**: 2024.12 ~ 2025.06 (7개월)  
 
 ## 목차
 {: .no_toc .text-delta }

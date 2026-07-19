@@ -1,16 +1,12 @@
 ---
 layout: default
-title: 3. 베이스트레이드 프로젝트
-parent: Projects
+title: 3. 베이스트레이드
+parent: Experience
 nav_order: 3
 ---
 
 # 베이스트레이드 프로젝트 이력
 {: .no_toc }
-
-> **역할**: Web Backend API 개발 및 인프라 운영 보조
-> **재직 기간**: 2020.12 ~ 2023.10 (2년 11개월)  
-
 
 ## 목차
 {: .no_toc .text-delta }
