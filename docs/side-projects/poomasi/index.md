@@ -18,7 +18,7 @@ nav_order: 2
 
 ---
 
->  회고
+>  관련 포스팅
 - 2025-11-10, [품앗이, FastAPI에 적용했던 두 가지 포인트](https://jakpentest.tistory.com/475)
 - 2025-11-04, [품앗이, FastAPI 아키텍처 어떻게 가져갈 것인가?](https://jakpentest.tistory.com/473)
 - 2025-11-03, [JWK로 OAuth2 토큰 검증하기](https://jakpentest.tistory.com/472)
