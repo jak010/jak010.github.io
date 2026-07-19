@@ -8,7 +8,7 @@ nav_order: 2
 # 품앗이 (Poomasi)
 {: .no_toc }
 
-`FastAPI` `Gemini 1.5 Flash` `Clean Architecture` `Hexagonal Architecture` `VPC Subnet 격리` `Terraform` `GitHub Actions` `Locust`
+`FastAPI` `Gemini 1.5 Flash` `Clean Architecture` `Hexagonal Architecture` `VPC Subnet 격리` `GitHub Actions` `Locust`
 
 ## 목차
 {: .no_toc .text-delta }
@@ -61,7 +61,6 @@ nav_order: 2
 | :--- | :--- | :--- |
 | **API 서버** | [be-poomasi-api](https://github.com/poomasi/be-poomasi-api) | Clean/Hexagonal Architecture 기반 멘토링 매칭 및 플랫폼 핵심 API 개발 |
 | **스케줄러 & 크롤러** | [be-poomasi-scheduler](https://github.com/poomasi/be-poomasi-scheduler) | 7개 IT 기업 채용 데이터 수집 크롤러 및 Gemini 기반 기술 스택 요구사항 분석 배치 개발 |
-| **인프라 IaC** | [poomasi-infrastructure](https://github.com/poomasi/poomasi-infrastructure) | Terraform을 이용한 전체 AWS VPC, EC2, ALB, RDS 등 클라우드 리소스 구성 선언적 코드 정의 |
 
 ### 기술 스택
 
@@ -79,7 +78,6 @@ nav_order: 2
 | **애플리케이션 서버** | EC2 (t2.micro) 내 uvicorn + gunicorn 프로세스 구동 |
 | **데이터베이스** | Amazon Aurora MySQL (VPC Private Subnet 격리 구성) |
 | **네트워크 및 보안** | ALB 로드 밸런싱, Route53 DNS 연동, Certificate Manager(ACM)를 통한 SSL/TLS 인증 |
-| **IaC (인프라 프로비저닝)** | Terraform 기반 클라우드 리소스 구성 선언적 코드로 형상 관리 |
 
 
 ### 주요 기능
@@ -109,7 +107,6 @@ nav_order: 2
 *   **자동화된 CI/CD 배포 파이프라인**:
     *   **지속적 통합(CI)**: 개발팀이 GitHub에 소스 코드를 반영하면 **GitHub Actions**가 자동으로 트리거되어 웹 및 API 서버 소스 코드를 빌드하고 검증함.
     *   **지속적 배포(CD)**: 백엔드 API(`be-poomasi-api`)와 수집 스케줄러(`be-poomasi-scheduler`)는 SSH 보안 통신 프로토콜을 활용해 `EC2` 인스턴스로 자동 배포함.
-    *   **코드 기반 인프라 정의(IaC)**: 전체 AWS 인프라 리소스 설정(`poomasi-infrastructure`)은 **Terraform**을 이용해 선언적 코드로 형상 관리하고 클라우드 인프라 변경 배포를 자동화함.
 
 ### 애플리케이션 아키텍처
 이 프로젝트는 영속성 기술과 외부 프레임워크로부터 핵심 비즈니스 로직을 보호하고 테스트 용이성을 극대화하기 위해 **Clean/Hexagonal Architecture (포트 & 어댑터 패턴)** 구조로 설계함.
