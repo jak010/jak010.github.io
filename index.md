@@ -7,6 +7,8 @@ permalink: /
 ---
 # Intro
 
+- `BLOG`: https://jakpentest.tistory.com/
+
 정보보호학을 전공하며 시스템의 동작 원리를 이해하는 것에서 개발을 시작했고, 지난 4년 4개월 동안 다양한 서비스의 백엔드를 개발하며 문제를 분석하고 개선하는 과정에서 가장 큰 보람을 느껴왔습니다.
 
 새로운 기능을 구현하는 것만큼이나 기존 시스템을 이해하고 병목과 장애의 원인을 찾아 더 안정적이고 유지보수하기 쉬운 구조로 개선하는 일을 즐깁니다. 그래서 개발을 할 때도 "어떻게 구현할까?"보다 "왜 이런 구조가 되었을까?"를 먼저 고민하는 편입니다.
@@ -17,9 +19,26 @@ permalink: /
 
 ---
 
-## ⏳ Experience Timeline
+## Experience Timeline
 
 <div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-time">2025.12 ~ 진행중</div>
+    <div class="timeline-badge"></div>
+    <div class="timeline-content">
+      <div class="timeline-title"><a href="{% link docs/side-projects/podpod/index.md %}">팟팟 (PodPod)</a> <span class="timeline-tag tag-side">Side Project</span></div>
+      <div class="timeline-role">백엔드 개발자 (개인 BE 개발, 2025.12 ~ 진행중)</div>
+      <div class="timeline-desc">
+        <ul>
+          <li><strong>모바일 앱 양대 스토어 출시</strong>: 기획, 디자인, 모바일(iOS/Android) 개발팀과 협업하여 구글 플레이스토어 및 애플 앱스토어에 앱을 성공적으로 런칭하고 실제 사용자 서비스 단계까지 프로젝트 완수</li>
+          <li><strong>의존성 격리 및 Clean/Hexagonal 아키텍처 도입</strong>: 외부 프레임워크(FastAPI) 및 ORM(SQLAlchemy) 기술 스펙 변경이 비즈니스 도메인에 영향을 주지 않도록 레이어를 물리적으로 격리하고 테스트 용이성 극대화</li>
+          <li><strong>통합 소셜 인증 및 JWT 세션 관리</strong>: 구글, 애플, 카카오, 네이버 등 다중 소셜 로그인 수단을 단일 인증 세션 API로 통합 설계하고 보안성이 확보된 JWT 토큰 발급 및 재발급 흐름 구축</li>
+          <li><strong>동행 팟 매칭 및 실시간 소통 기능</strong>: 콘서트 동행 메이트 선발(신청서 승인/거절) 프로세스, 실시간 채팅 메시징 처리 및 메이트 신뢰도 자가 진단 평가 시스템 구현</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="timeline-item">
     <div class="timeline-time">2025.07 ~ 2025.12</div>
     <div class="timeline-badge"></div>
@@ -29,7 +48,7 @@ permalink: /
       <div class="timeline-desc">
         <ul>
           <li><strong>금융 결제망 분석 및 검증 환경 구축</strong>: 중단되었던 Dozn API 가상계좌 결제 서비스의 레거시 규격과 전체 데이터 라이프사이클을 분석하여 경남은행 연동망 테스트 결제 환경 복구</li>
-          <li><strong>트랜잭션 검증 및 운영 표준화</strong>: 가상계좌 발급, 입금 통지, 결제 완료, 정산 배치 등 시나리오별 결제 상태 전이를 검증하고 기능 규격서 및 운영 가이드를 현행화하여 시스템 안정성 확보</li>
+          <li><strong>트랜잭션 검증 및 운영 표준화</strong>: 가상계좌 발급부터 대사 정산까지 시나리오별 결제 상태 전이를 검증하고 기능 규격서 및 운영 가이드를 현행화하여 시스템 안정성 확보</li>
         </ul>
       </div>
     </div>
@@ -122,10 +141,10 @@ permalink: /
       <div class="timeline-role">백엔드 개발자 (정규직, 2년 11개월)</div>
       <div class="timeline-desc">
         <ul>
-          <li><strong>WebSocket 데이터 유실 개선</strong>: GPU 장비의 WebSocket 데이터 수집 누락 분석 후, Daphne 인스턴스 다중화(1개 → 4개) 및 Nginx 분산 처리를 통해 <strong>추가 인프라 비용 없이 데이터 유실률 0%</strong> 달성</li>
-          <li><strong>P2P 법인 투자 플랫폼 구축 및 보안 강화</strong>: 핵심 금융/예치금 API 개발을 주도하여 **누적 매출 20억 원 달성**에 기여하고, wkhtmltopdf 기반 PDF 생성 시 발생할 수 있는 SSTI 취약점 차단 및 리소스 제어 (25,000자 제한) 정책 수립</li>
+          <li><strong>WebSocket 데이터 유실률 0% 달성</strong>: GPU 장비의 WebSocket 데이터 수집 누락 분석 후, Daphne 인스턴스 다중화(1개 → 4개) 및 Nginx 분산 처리를 통해 <strong>추가 인프라 비용 없이 데이터 유실률 0%</strong> 달성</li>
+          <li><strong>P2P 법인 투자 플랫폼 구축 및 보안 강화</strong>: 핵심 금융/예치금 API 개발을 주도하여 <strong>누적 매출 20억 원 달성</strong>에 기여하고, wkhtmltopdf 기반 PDF 생성 시 발생할 수 있는 SSTI 취약점 차단 및 리소스 제어 (25,000자 제한) 정책 수립</li>
           <li><strong>금융 데이터 파이프라인 및 수집 자동화</strong>: EventBridge + Lambda 기반 수집 배치를 구축하고, Selenium UI 수집 방식을 HTTP Request 기반으로 리팩토링하여 데이터 수집 소요 시간을 **90초에서 10~15초로 약 85% 단축**</li>
-          <li><strong>테스트 환경 표준화</strong>: pytest 도입 및 모킹(Mocking) 표준 가이드를 정립하여 사내 테스트 커버리지를 **52% → 71%로 향상**시키고 Custom Test Runner 개발을 통해 개발 생산성 증대</li>
+          <li><strong>테스트 환경 표준화</strong>: pytest 도입 및 모킹(Mocking) 표준 가이드를 정립하여 사내 테스트 커버리지를 <strong>52% → 71%로 향상</strong>시키고 Custom Test Runner 개발을 통해 개발 생산성 증대</li>
         </ul>
       </div>
     </div>
