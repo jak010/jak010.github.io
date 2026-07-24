@@ -1,9 +1,7 @@
 ---
 title: Education
 layout: default
-parent: About Me
-nav_order: 1
-has_children: false
+nav_order: 5
 has_toc: true
 ---
 
@@ -25,8 +23,8 @@ has_toc: true
 | 항목 | 내용 |
 | :--- | :--- |
 | **학교** | 목포대학교 |
-| **전공** | 정보호호학과 |
-| **재학 기간** | 2014.03 ~ 2021.02 (졸업 등) |
+| **전공** | 정보보호학과 |
+| **재학 기간** | 2014.03 ~ 2021.02 (졸업) |
 
 ---
 
