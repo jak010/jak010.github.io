@@ -23,5 +23,5 @@ group :development, :test do
   gem 'axe-core-rspec'
   gem 'capybara'
   gem 'capybara-screenshot'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', "~> 4.20"
 end
