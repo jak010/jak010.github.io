@@ -17,7 +17,7 @@ has_toc: false
   <div class="overview-card">
     <div class="overview-card-header">
       <div class="overview-card-title-group">
-        <h3 class="overview-card-title"><span class="blur-text">페이네스트</span> <span class="timeline-tag tag-company">Company</span></h3>
+        <h2 class="overview-card-title"><span class="blur-text">페이네스트</span> <span class="timeline-tag tag-company">Company</span></h2>
         <div class="overview-card-meta">백엔드 개발자 (계약직) | 2025.07 ~ 2025.12 (6개월)</div>
       </div>
     </div>
@@ -45,7 +45,7 @@ has_toc: false
   <div class="overview-card">
     <div class="overview-card-header">
       <div class="overview-card-title-group">
-        <h3 class="overview-card-title"><span class="blur-text">엠포스</span> <span class="timeline-tag tag-company">Company</span></h3>
+        <h2 class="overview-card-title"><span class="blur-text">엠포스</span> <span class="timeline-tag tag-company">Company</span></h2>
         <div class="overview-card-meta">백엔드 개발자 (정규직) | 2024.12 ~ 2025.06 (7개월)</div>
       </div>
     </div>
@@ -74,7 +74,7 @@ has_toc: false
   <div class="overview-card">
     <div class="overview-card-header">
       <div class="overview-card-title-group">
-        <h3 class="overview-card-title"><span class="blur-text">베이스트레이드</span> <span class="timeline-tag tag-company">Company</span></h3>
+        <h2 class="overview-card-title"><span class="blur-text">베이스트레이드</span> <span class="timeline-tag tag-company">Company</span></h2>
         <div class="overview-card-meta">백엔드 개발자 (정규직) | 2020.12 ~ 2023.10 (2년 11개월)</div>
       </div>
     </div>
@@ -104,7 +104,7 @@ has_toc: false
   <div class="overview-card">
     <div class="overview-card-header">
       <div class="overview-card-title-group">
-        <h3 class="overview-card-title"><span class="blur-text">소울소프트</span> <span class="timeline-tag tag-company">Company</span></h3>
+        <h2 class="overview-card-title"><span class="blur-text">소울소프트</span> <span class="timeline-tag tag-company">Company</span></h2>
         <div class="overview-card-meta">보안 취약점 진단 인턴 | 2020.09 ~ 2020.12 (4개월)</div>
       </div>
     </div>
