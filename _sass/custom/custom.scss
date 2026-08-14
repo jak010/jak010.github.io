@@ -52,7 +52,7 @@ h4 {
   height: 10px;
   border-radius: 50%;
   background: #268bd2;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   z-index: 2;
   top: 6px;
 }
@@ -84,7 +84,7 @@ h4 {
 .timeline-role {
   font-size: 0.8rem;
   color: #595959;
-  margin: 2px 0 6px 0;
+  margin: 2px 0 6px;
 }
 
 .timeline-desc {
@@ -135,9 +135,13 @@ h4 {
 
 /* Intro Catchphrase Style */
 .intro-hero {
-  margin: 1.5rem 0 2rem 0;
+  margin: 1.5rem 0 2rem;
   padding: 1.8rem;
-  background: linear-gradient(135deg, rgba(#268bd2, 0.06) 0%, rgba(#268bd2, 0.01) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(#268bd2, 0.06) 0%,
+    rgba(#268bd2, 0.01) 100%
+  );
   border-left: 5px solid #268bd2;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
@@ -146,12 +150,12 @@ h4 {
     font-size: 1.35rem;
     font-weight: 700;
     color: #2c3e50;
-    margin: 0 0 1rem 0 !important;
+    margin: 0 0 1rem !important;
     line-height: 1.45;
   }
 
   .hero-key-strengths {
-    margin: 1rem 0 1.2rem 0;
+    margin: 1rem 0 1.2rem;
 
     ul {
       margin: 0;
@@ -209,12 +213,14 @@ h4 {
 }
 
 .skill-card {
-  background: var(--background-color, #ffffff);
+  background: var(--background-color, #fff);
   border: 1px solid $border-color;
   border-radius: 6px;
   padding: 1.2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-2px);
@@ -226,7 +232,7 @@ h4 {
   font-size: 0.95rem !important;
   font-weight: 700 !important;
   color: #2c3e50;
-  margin: 0 0 0.8rem 0 !important;
+  margin: 0 0 0.8rem !important;
   border-bottom: 2px solid $border-color;
   padding-bottom: 0.4rem;
   display: flex;
@@ -253,12 +259,14 @@ h4 {
 }
 
 .overview-card {
-  background: var(--background-color, #ffffff);
+  background: var(--background-color, #fff);
   border: 1px solid $border-color;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-2px);
@@ -298,7 +306,7 @@ h4 {
 
 .overview-card-meta {
   font-size: 0.8rem;
-  color: #888888;
+  color: #888;
 }
 
 .overview-card-body {
@@ -320,7 +328,7 @@ h4 {
 }
 
 .overview-card-highlights {
-  margin: 0.5rem 0 0 0;
+  margin: 0.5rem 0 0;
   padding-left: 1.2rem;
 
   li {
@@ -354,7 +362,7 @@ h4 {
 
   &:hover {
     background-color: #268bd2;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
   }
 }
