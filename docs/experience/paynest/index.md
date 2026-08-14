@@ -5,7 +5,7 @@ parent: Experience
 nav_order: 1
 ---
 
-# <span class="blur-text">페이네스트</span> 프로젝트 이력
+# P사 프로젝트 이력
 {: .no_toc }
 
 ## 목차

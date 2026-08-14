@@ -5,7 +5,7 @@ parent: Experience
 nav_order: 4
 ---
 
-# <span class="blur-text">소울소프트</span> 주요 업무
+# S사 주요 업무
 {: .no_toc }
 
 ## 목차

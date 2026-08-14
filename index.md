@@ -54,7 +54,7 @@ permalink: /
     <div class="timeline-time">2025.07 ~ 2025.12</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/paynest/index.md %}"><span class="blur-text">페이네스트</span></a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/paynest/index.md %}">P사</a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">백엔드 개발자 (계약직, 6개월)</div>
       <div class="timeline-desc">
         <ul>
@@ -69,7 +69,7 @@ permalink: /
     <div class="timeline-time">2024.12 ~ 2025.06</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/emforce/index.md %}"><span class="blur-text">엠포스</span></a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/emforce/index.md %}">E사</a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">백엔드 개발자 (정규직, 7개월)</div>
       <div class="timeline-desc">
         <ul>
@@ -86,7 +86,7 @@ permalink: /
     <div class="timeline-time">2020.12 ~ 2023.10</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/basetrade/index.md %}"><span class="blur-text">베이스트레이드</span></a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/basetrade/index.md %}">B사</a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">백엔드 개발자 (정규직, 2년 11개월)</div>
       <div class="timeline-desc">
         <ul>
@@ -103,7 +103,7 @@ permalink: /
     <div class="timeline-time">2020.09 ~ 2020.12</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/soulsoft/index.md %}"><span class="blur-text">소울소프트</span></a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/soulsoft/index.md %}">S사</a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">보안 취약점 진단 인턴 (4개월)</div>
       <div class="timeline-desc">
         <ul>

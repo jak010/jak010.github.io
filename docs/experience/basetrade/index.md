@@ -4,7 +4,7 @@ parent: Experience
 nav_order: 3
 ---
 
-# <span class="blur-text">베이스트레이드</span> 프로젝트 이력
+# B사 프로젝트 이력
 {: .no_toc }
 
 ## 목차

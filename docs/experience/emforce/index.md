@@ -4,7 +4,7 @@ parent: Experience
 nav_order: 2
 ---
 
-# <span class="blur-text">엠포스</span> 프로젝트 이력
+# E사 프로젝트 이력
 {: .no_toc }
 
 ## 목차
