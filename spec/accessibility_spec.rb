@@ -25,6 +25,7 @@ excluded_elements = [
   '[data-a11y-errors="true"]',
   '[class="reversefootnote"]', # this is the markdown backlink - TODO
   '[type="checkbox"]', # this is for markdown-generated checkboxes - TODO
+  '[id^="mermaid-"]', # exclude mermaid generated SVGs from missing alt text rule
 ]
 
 RSpec.shared_examples 'a11y tests' do
