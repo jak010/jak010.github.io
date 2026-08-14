@@ -2,6 +2,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 echo "======================================"
 echo "Running local tests before pushing..."
 echo "======================================"
