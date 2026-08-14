@@ -6,52 +6,42 @@ description: "성능 최적화와 안정적인 아키텍처 설계에 몰입하�
 permalink: /
 ---
 
-# Intro
+## About Me
 
-<div class="intro-hero">
-  <p class="hero-title">성능 최적화와 안정적인 아키텍처 설계에 몰입하는 4년 차 백엔드 개발자, Jako입니다.</p>
-  <div class="hero-key-strengths">
-    <ul>
-      <li><strong>구현 전에 도메인 격리와 아키텍처 구조를 먼저 고민합니다.</strong></li>
-      <li><strong>성능 저하와 장애의 원인을 로그와 데이터를 통해 정확히 분석하고 해결합니다.</strong></li>
-      <li><strong>사이드 프로젝트를 통해 새로운 기술을 지속적으로 검증하고 실무에 도입합니다.</strong></li>
-      <li><strong>정보보호 전공 지식을 바탕으로 잠재적인 보안 위협을 선제적으로 통제합니다.</strong></li>
-    </ul>
-  </div>
-  <div class="intro-meta-grid">
-    <div class="meta-item">💼 <strong>총 경력</strong>: 4년 4개월 (백엔드 엔지니어)</div>
-    <div class="meta-item">🛠️ <strong>핵심 분야</strong>: 아키텍처 설계, 성능 최적화, 보안 리스크 예방</div>
-    <div class="meta-item">🔗 <strong>채널</strong>: <a href="https://github.com/jak010" target="_blank">GitHub</a> · <a href="https://jakpentest.tistory.com/" target="_blank">Tech Blog</a></div>
-  </div>
-</div>
+**총 경력:** 4년 4개월 · 백엔드 엔지니어  
+**핵심 분야:** 아키텍처 설계 · 성능 최적화 · 안정성 · 보안  
+**채널:** <a href="https://github.com/jak010" target="_blank">GitHub</a> · <a href="https://jakpentest.tistory.com/" target="_blank">Tech Blog</a>
 
-정보보호학 전공을 기반으로 시스템 코어의 동작 원리를 명확하게 파악하며 개발을 시작했습니다. 
-단순히 동작하는 기능 개발에 그치지 않고, 비즈니스 코어 규칙과 인프라/세부 기술 스펙을 깔끔하게 격리하여 **지속 가능하고 변경에 유연한 구조**를 설계하는 일을 즐깁니다. 
-또한 시스템 리소스 제약과 대량 수집 병목 등 운영 환경의 한계 상황에서 발생하는 까다로운 문제를 로그와 명확한 수치 데이터를 근거로 집요하게 추적하여 개선해 온 실무적 경험을 갖고 있습니다.
+문제가 생기면 먼저 원인을 확인하고, 주어진 환경에서 해결할 방법을 찾습니다.
+
+4년 4개월 동안 백엔드 시스템을 개발하며 성능 저하, 메모리 부족, 데이터 수집 병목처럼 운영 환경에서 발생하는 문제를 직접 해결해왔습니다. RAM 2GB의 소형 서버에서 OOM으로 배치 작업이 중단되었을 때는 메모리 사용량과 데이터 처리 방식을 분석하고, Swap 확장과 메모리 연산 개선을 통해 배치 작업을 안정화했습니다. 데이터 수집 과정에서는 브라우저 자동화의 병목을 찾아 인증 방식을 API 통신으로 전환했고, 처리 시간을 3~5분에서 30~45초로 약 80% 단축했습니다.
+
+문제를 한 번 해결하는 것에 그치지 않고, 같은 문제가 반복되지 않도록 구조까지 살펴보는 편입니다. 서버 증설이 어려운 상황에서는 인스턴스 다중화와 분산 처리를 직접 구현해 **데이터 유실률 0%**를 달성했고, 비즈니스 로직이 특정 기술에 묶이지 않도록 도메인과 인프라의 결합도를 낮추는 아키텍처도 설계하고 검증했습니다.
+
+새로운 기술이나 구조를 그대로 적용하기보다 실제 환경에서 직접 검증하고, 그 과정에서 얻은 결과를 다시 개선에 활용합니다. 기능이 동작하는 것에서 끝나지 않고, 왜 문제가 발생했는지 이해하고 다시 문제가 생기지 않는 방향을 고민하는 백엔드 개발자입니다.
 
 ---
 
-## About Me
+## Tech Blog
 
-### Core Competency
+개발을 하면서 생긴 궁금증을 그냥 지나치지 않고, 직접 찾아보고 만들어보며 기록하고 있습니다.
 
-#### 1. 성능 최적화 및 문제 해결 (Performance & Optimization)
-* **실시간 WebSocket 분산 수집**: 서버 증설 예산이 제한된 상황에서 Daphne 4개 인스턴스 다중화와 Nginx reverse proxy 분산 처리를 자체 구현하여 **추가 인프라 비용 없이 WebSocket 데이터 유실률 0%**를 달성했습니다. ([베이스트레이드 Daphne 다중화 이력]({% link docs/experience/basetrade/index.md %}#1-daphne-다중화-및-nginx-reverse-proxy를-통한-websocket-수집-유실률-0-달성))
-* **수집 파이프라인 최적화**: Selenium 브라우저 자동화의 병목을 분석하여 **Keycloak OAuth2 인증 토큰 직접 API 발급 방식**으로 전환해, 데이터 수집 소요 시간을 **3~5분에서 30~45초로 약 80% 단축**했습니다. ([엠포스 API 수집 전환 이력]({% link docs/experience/emforce/index.md %}#2-selenium-기반-수집-구조의-api-기반-전환-및-최적화))
-* **제한된 서버 리소스(RAM 2GB) OOM 장애 해결**: 2GB RAM의 소형 EC2 서버 환경에서 OOM `MemoryError` 발생 시, 인프라 업그레이드 없이 Swap 메모리 확장 및 Pandas 데이터프레임의 인플레이스(in-place) 메모리 연산 튜닝을 통해 **장애 재발률 0%**로 배치 작업을 안정화시켰습니다. ([엠포스 메모리 최적화 이력]({% link docs/experience/emforce/index.md %}#1-대용량-광고-데이터-처리-과정의-memoryerror-장애-분석-및-배치-안정화))
-* **방화벽 우회 및 비동기 I/O 수집 최적화**: Cloudflare 방화벽 우회(`cloudscraper`/`fake-useragent`) 및 `aiohttp` / `aiomysql`을 도입하여 대용량 매체 데이터 파싱 및 DB 적재 파이프라인을 완전 비동기로 전환해 초당 처리 성능을 극대화했습니다. ([FOLDER 비동기 크롤러 이력]({% link docs/side-projects/futurebyte/folder.md %}#2-cloudflare-방화벽-우회-및-비동기-파이프라인-최적화))
+업무에서 사용하는 기술뿐만 아니라 새롭게 등장하는 개발 도구나 기술에도 관심을 가지고, 필요하면 작은 프로젝트를 만들어 직접 사용해보거나 기존 방식과 비교해보기도 합니다.
 
-#### 2. 유연한 애플리케이션 아키텍처 설계 (Flexible Architecture Design)
-* **Clean/Hexagonal Architecture 기반 도메인 보호**: FastAPI, MariaDB 및 외부 LLM API(Gemini) 등의 기술 스펙 변화가 비즈니스 코어 규칙에 미치는 영향을 제어하기 위해 **Clean/Hexagonal Architecture** 및 **포트 & 어댑터 패턴**을 적극적으로 설계하고 검증했습니다. ([품앗이 아키텍처 검증 이력]({% link docs/side-projects/poomasi/index.md %}#2-clean--hexagonal-architecture-도입을-통한-도메인-보호))
-* **SQLAlchemy Classical Mapping을 통한 도메인 독립성 극대화**: 데이터베이스 테이블 매핑 라이브러리(SQLAlchemy)의 결합도를 차단하기 위해 **Classical Mapping (`map_imperatively()`)**을 도입하여, DB 기술 스펙에 의존하지 않는 순수 도메인 단위 테스트 환경을 조성했습니다. ([Petting 도메인 격리 이력]({% link docs/side-projects/futurebyte/petting.md %}#1-sqlalchemy-classical-mapping-아키텍처-설계))
-* **의존성 주입(DI) 컨테이너 및 커스텀 트랜잭션 라우팅**: `dependency-injector` 및 IoC 구조를 도입하여 런타임 구현체를 유연하게 주입받았고, FastAPI 라우팅을 확장한 커스텀 `TransactionRoute`를 직접 구현해 라우터 계층에서 세션 관리를 자동화했습니다. ([Oh-Manager DI 설계 이력]({% link docs/side-projects/futurebyte/oh-manager.md %}#2-의존성-주입di-기반-클린ddd-아키텍처-설계))
-* **가상계좌 결제 및 정산 연동 라이프사이클 복구**: 중단되었던 Dozn API 가상계좌 결제/정산 연동 테스트망 규격을 역분석하고, 격리된 가상계좌 결제 테스트 환경을 복원해 잠재적 장애 리스크를 최소화했습니다. ([페이네스트 가상계좌 복구 이력]({% link docs/experience/paynest/index.md %}#1-중단된-가상계좌-결제-서비스-분석-및-재개-검증-환경-구축))
+그 과정에서 얻은 경험과 시행착오를 기술 블로그에 꾸준히 기록하고 있습니다.
 
-#### 3. 안정성 및 보안 제어 (Stability & Security Engineering)
-* **AWS Lambda 기반 SQL Injection 취약점 분석 및 가이드 제안**: pymysql 환경에서 사용자 입력이 결합된 동적 쿼리의 Time-based SQL Injection 취약점을 진단 및 분석하고, 파라미터 바인딩 적용 가이드를 작성하여 사내 보안 가이드에 반영했습니다. ([엠포스 SQL Injection 분석 이력]({% link docs/experience/emforce/index.md %}#3-aws-lambda-기반-보안-취약점-진단-및-파라미터-바인딩-가이드-수립))
-* **SSTI 취약점 예방 및 리소스 제어**: HTML 렌더러(wkhtmltopdf) 결합 시 발생할 수 있는 SSTI(Server-Side Template Injection) 공격 경로를 차단하고, 리소스 부하 예방을 위한 텍스트 크기(25,000자) 및 메모리 제한 설정을 구축했습니다. ([베이스트레이드 보안 설계 이력]({% link docs/experience/basetrade/index.md %}#2-p2p-법인-투자-플랫폼-개발-및-wkhtmltopdf-보안ssti-강화))
-* **단일 인증 및 JWT 세션 자동 갱신**: 다양한 소셜 로그인을 통합 처리하는 OAuth 흐름을 단일 구조로 통합하고, Redis/JWT 기반의 Token rotation 방식을 직접 구축하여 동시성 오류 및 토큰 탈취 위협을 예방했습니다. ([팟팟 인증 설계 이력]({% link docs/side-projects/podpod/index.md %}#3-통합-소셜-인증-및-jwt-토큰-갱신-메커니즘-설계))
-* **VPC Subnet 분리를 통한 데이터베이스 격리**: 퍼블릭 서브넷(WAS)과 프라이빗 서브넷(DB) 간의 엄격한 포트 제한 및 인바운드 보안 그룹 규칙 설정을 통해 외부 직접 접속을 완전히 차단하는 보안 아키텍처를 설계했습니다. ([품앗이 VPC 설계 이력]({% link docs/side-projects/poomasi/index.md %}#3-aws-vpc-이중화-및-rds-인프라-격리))
+<!-- BLOG-POST-LIST:START -->
+- [3. AI 가지고 놀기 - PoorMan의 AI Remote Control](https://jakpentest.tistory.com/494) (2026.08.12)
+- [2. AI 가지고 놀기 -  Antigravity에서 OpenCode](https://jakpentest.tistory.com/493) (2026.08.07)
+- [1. AI 가지고 놀기 -  Antigravity 와 테스트 코드](https://jakpentest.tistory.com/492) (2026.07.27)
+<!-- BLOG-POST-LIST:END -->
+
+### 🔥 인기 포스트 (최근 30일)
+<!-- POPULAR-POSTS:START -->
+- 🥇 [환경변수 관리 도구인 Infisical 에 대한 노트](https://jakpentest.tistory.com/483) (최근 30일 조회수: 146회)
+- 🥈 [마비노기 패킷 송수신 데이터 관찰기](https://jakpentest.tistory.com/411) (최근 30일 조회수: 51회)
+- 🥉 [Commit Message 자동화하기, 근데 AI를 곁들인](https://jakpentest.tistory.com/456) (최근 30일 조회수: 44회)
+<!-- POPULAR-POSTS:END -->
 
 ---
 
@@ -62,12 +52,12 @@ permalink: /
     <div class="timeline-time">2025.07 ~ 2025.12</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/paynest/index.md %}">페이네스트</a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/paynest/index.md %}"><span class="blur-text">페이네스트</span></a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">백엔드 개발자 (계약직, 6개월)</div>
       <div class="timeline-desc">
         <ul>
-          <li><strong>금융 결제망 분석 및 검증 환경 구축</strong>: 중단되었던 Dozn API 가상계좌 결제 서비스의 레거시 규격과 전체 데이터 라이프사이클을 분석하여 경남은행 연동망 테스트 결제 환경 복구</li>
-          <li><strong>트랜잭션 검증 및 운영 표준화</strong>: 가상계좌 발급부터 대사 정산까지 시나리오별 결제 상태 전이를 검증하고 기능 규격서 및 운영 가이드를 현행화하여 시스템 안정성 확보</li>
+          <li><strong>기존 결제망 동작 검증 환경 구성</strong>: 운영 중단된 가상계좌 결제 서비스의 라이프사이클을 파악하기 위해, 외부 API 연동망을 활용한 검증 환경을 구성하여 실제 운영 데이터 오염 없이 전체 결제 흐름을 테스트함</li>
+          <li><strong>복잡한 상태 흐름 분석 및 구조화</strong>: 기존 시스템의 파편화된 결제 상태값과 트랜잭션 로그를 추적하여 FSM(유한 상태 기계) 형태로 구조화하고 운영 가이드로 문서화함으로써 시스템 유지보수성을 높임</li>
         </ul>
       </div>
     </div>
@@ -77,14 +67,14 @@ permalink: /
     <div class="timeline-time">2024.12 ~ 2025.06</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/emforce/index.md %}">엠포스</a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/emforce/index.md %}"><span class="blur-text">엠포스</span></a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">백엔드 개발자 (정규직, 7개월)</div>
       <div class="timeline-desc">
         <ul>
-          <li><strong>데이터 수집 파이프라인 최적화</strong>: Selenium 브라우저 자동화 수집 방식을 Keycloak 인증 분석 기반의 HTTP API 수집으로 전환하여 수집 시간을 <strong>3~5분에서 30~45초로 약 80% 단축</strong>하고 오버헤드 제거</li>
-          <li><strong>메모리 장애 분석 및 배치 안정화</strong>: 대용량 광고 데이터 병합 중 발생한 <code>MemoryError</code> 분석 후, 무중단 Swap 메모리 확장을 도입하여 서비스 중단 없이 배치 실행 안정성 확보</li>
-          <li><strong>보안 취약점 진단 및 가이드 제안</strong>: AWS Lambda 환경의 데이터 조회 로직에서 Time-based SQL Injection 취약성을 검증하고, 파라미터 바인딩 적용 가이드를 보고서 형태로 도출해 사내 보안 수준 제고</li>
-          <li><strong>Custom Test Runner 구축</strong>: Django 기본 테스트 러너(Test Runner)를 확장하여 테스트 메서드의 docstring을 터미널에 한글 설명으로 출력하게 함으로써 테스트 결과 가독성 향상</li>
+          <li><strong>데이터 수집 로직 개선</strong>: 기존 브라우저 자동화(Selenium) 수집 방식의 네트워크 요청을 분석하여 API 통신 방식으로 전환함으로써 수집 시간을 **약 80%** 단축(**3~5분** → **30~45초**)</li>
+          <li><strong>배치 작업 메모리 최적화</strong>: **2GB** RAM 환경에서 발생하던 OOM(MemoryError) 원인을 분석하고, Swap 확장 및 데이터 연산 최적화를 적용하여 배치 중단 문제 해결</li>
+          <li><strong>SQL Injection 취약점 분석 및 보안 가이드 작성</strong>: AWS Lambda 환경에서 사용자 입력값이 쿼리에 결합되는 구조를 검증하고, 파라미터 바인딩을 적용하여 안전한 SQL 작성 기준 마련</li>
+          <li><strong>개발 환경 개선</strong>: Django Custom Test Runner를 활용하여 테스트 결과 출력 시 한글 설명이 표시되도록 개선해 오류 파악 편의성 향상</li>
         </ul>
       </div>
     </div>
@@ -94,14 +84,14 @@ permalink: /
     <div class="timeline-time">2020.12 ~ 2023.10</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/basetrade/index.md %}">베이스트레이드</a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/basetrade/index.md %}"><span class="blur-text">베이스트레이드</span></a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">백엔드 개발자 (정규직, 2년 11개월)</div>
       <div class="timeline-desc">
         <ul>
-          <li><strong>WebSocket 데이터 유실률 0% 달성</strong>: GPU 장비의 WebSocket 데이터 수집 누락 분석 후, Daphne 인스턴스 다중화(1개 → 4개) 및 Nginx 분산 처리를 통해 <strong>추가 인프라 비용 없이 데이터 유실률 0%</strong> 달성</li>
-          <li><strong>P2P 법인 투자 플랫폼 구축 및 보안 강화</strong>: 핵심 금융/예치금 API 개발을 주도하여 <strong>누적 매출 20억 원 달성</strong>에 기여하고, wkhtmltopdf 기반 PDF 생성 시 발생할 수 있는 SSTI 취약점 차단 및 리소스 제어 (25,000자 제한) 정책 수립</li>
-          <li><strong>금융 데이터 파이프라인 및 수집 자동화</strong>: EventBridge + Lambda 기반 수집 배치를 구축하고, Selenium UI 수집 방식을 HTTP Request 기반으로 리팩토링하여 데이터 수집 소요 시간을 <strong>90초에서 10~15초로 약 85% 단축</strong></li>
-          <li><strong>테스트 환경 표준화</strong>: pytest 도입 및 모킹(Mocking) 표준 가이드를 정립하여 사내 테스트 커버리지를 <strong>52% → 71%로 향상</strong>시키고 Custom Test Runner 개발을 통해 개발 생산성 증대</li>
+          <li><strong>WebSocket 데이터 수집 병목 개선</strong>: 단일 프로세스에서 처리하던 데이터 수집 로직의 누락 원인을 분석하고, 서버 인스턴스를 다중화하여 인프라 증설 없이 수집 안정성을 개선함</li>
+          <li><strong>금융 거래 정합성 및 보안 조치</strong>: 동시성 처리를 위해 비관적 락을 적용하여 트랜잭션 무결성을 확보하고, PDF 보고서 생성 시 발생할 수 있는 템플릿 인젝션(SSTI) 및 자원 고갈 문제를 사전 방지</li>
+          <li><strong>데이터 수집 파이프라인 최적화</strong>: 매일 반복되는 금융 데이터 수집을 자동화하고, 기존 브라우저 자동화 방식의 병목을 API 통신으로 변경하여 수집 시간을 **약 90초**에서 **10~15초**로 단축</li>
+          <li><strong>테스트 환경 도입</strong>: 기능 배포 시 발생하던 불안정성을 줄이기 위해 pytest를 도입하고, 외부 연동망을 모킹(Mocking)하여 테스트 커버리지를 **52%**에서 **71%**로 향상</li>
         </ul>
       </div>
     </div>
@@ -111,7 +101,7 @@ permalink: /
     <div class="timeline-time">2020.09 ~ 2020.12</div>
     <div class="timeline-badge"></div>
     <div class="timeline-content">
-      <div class="timeline-title"><a href="{% link docs/experience/soulsoft/index.md %}">소울소프트</a> <span class="timeline-tag tag-company">Company</span></div>
+      <div class="timeline-title"><a href="{% link docs/experience/soulsoft/index.md %}"><span class="blur-text">소울소프트</span></a> <span class="timeline-tag tag-company">Company</span></div>
       <div class="timeline-role">보안 취약점 진단 인턴 (4개월)</div>
       <div class="timeline-desc">
         <ul>

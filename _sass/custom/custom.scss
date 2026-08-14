@@ -358,3 +358,15 @@ h4 {
     text-decoration: none;
   }
 }
+
+/* Blur Effect for Anonymization */
+.blur-text {
+  filter: blur(5px);
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  user-select: none;
+}
+
+.blur-text:hover {
+  filter: blur(0);
+}
