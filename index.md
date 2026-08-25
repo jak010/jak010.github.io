@@ -33,9 +33,9 @@ permalink: /
 그 과정에서 얻은 경험과 시행착오를 기술 블로그에 꾸준히 기록하고 있습니다.
 
 <!-- BLOG-POST-LIST:START -->
-- [회사에 들어온 지 이틀째다.](https://jakpentest.tistory.com/495) (2026.08.19)
 - [3. AI 가지고 놀기 - PoorMan의 AI Remote Control](https://jakpentest.tistory.com/494) (2026.08.12)
 - [2. AI 가지고 놀기 -  Antigravity에서 OpenCode](https://jakpentest.tistory.com/493) (2026.08.07)
+- [1. AI 가지고 놀기 -  Antigravity 와 테스트 코드](https://jakpentest.tistory.com/492) (2026.07.27)
 <!-- BLOG-POST-LIST:END -->
 
 ### 🔥 인기 포스트 (최근 30일)
