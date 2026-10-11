@@ -33,7 +33,7 @@ permalink: /
 그 과정에서 얻은 경험과 시행착오를 기술 블로그에 꾸준히 기록하고 있습니다.
 
 <!-- BLOG-POST-LIST:START -->
-- [Django, Python Sub Interpreter Issue](https://jakpentest.tistory.com/498) (2026.10.09)
+- [Apache를 웹 서버로 쓰는 WSGI의 Python Sub Intepreter 이슈](https://jakpentest.tistory.com/498) (2026.10.09)
 - [한빛미디어 - 나는리뷰어다2026, AI 시대의 엔지니어링 전략](https://jakpentest.tistory.com/496) (2026.08.27)
 - [3. AI 가지고 놀기 - PoorMan의 AI Remote Control](https://jakpentest.tistory.com/494) (2026.08.12)
 <!-- BLOG-POST-LIST:END -->
